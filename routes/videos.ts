@@ -1,6 +1,6 @@
 import express from "express";
 import multer from "multer";
-import { uploadVideoToS3 } from "../S3Config/utils.ts";
+import { uploadVideoToS3 } from "../s3Config/utils.ts";
 
 const router = express.Router();
 
