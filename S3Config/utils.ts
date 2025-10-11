@@ -7,7 +7,7 @@ export const uploadVideoToS3 = async (
   req: Request,
   res: Response,
 ) => {
-  const file = (req as any)?.file as MulterFile;
+  const file = req.file as MulterFile;
 
   const uploadParams = {
     Bucket: process.env.AWS_BUCKET_NAME ?? "",
